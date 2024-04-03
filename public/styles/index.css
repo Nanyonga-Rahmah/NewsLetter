@@ -1,0 +1,138 @@
+/*  || RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  || GENERAL STYLES */
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: hsl(235, 18%, 26%);
+}
+.container {
+  display: grid;
+  grid-template-columns: 0.7fr 0.6fr;
+  min-height: fit-content;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  padding: 10px;
+  overflow: hidden;
+}
+.container__image {
+  background-image: url("/images/illustration-sign-up-desktop.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.hero-text__ul {
+  list-style: none;
+  padding: 5px 0 10px;
+}
+li {
+  position: relative;
+  padding: 5px 30px;
+}
+li::before {
+  content: url("/images/icon-list.svg");
+  position: absolute;
+
+  left: 0;
+}
+
+.container__text {
+  padding: 0 20px;
+  color: hsl(234, 29%, 20%);
+}
+.hero-text__h1 {
+  margin-top: 30px;
+}
+.hero-text__p {
+  padding: 15px 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  padding: 10px 0;
+}
+input[type="email"],
+button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button {
+  width: 100%;
+  color: white;
+  background-color: hsl(234, 29%, 20%);
+  font-weight: bold;
+  outline: none;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+button:hover {
+  background-image: linear-gradient(90deg, rgb(126, 16, 34), orange);
+  box-shadow: 5px 0 5px 5px white;
+  transform: translateY(-2px);
+}
+@media (max-width: 646px) {
+  body {
+    min-height: fit-content;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .container__text {
+    grid-row: 2/3;
+  }
+  .container__image {
+    background-image: url("/images/illustration-sign-up-mobile.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .container {
+    width: 90%;
+    height: 90vh;
+    margin: 0 auto;
+  }
+}
+
+.success_container {
+  width: 300px;
+  
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.success_container h1{
+    margin: 10px 0;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    background-image: url('/images/icon-list.svg');
+    border-radius: 50px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+span{
+    font-weight: bold;
+
+}
