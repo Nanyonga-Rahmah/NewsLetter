@@ -3,9 +3,9 @@
 ## Features
 - User-friendly interface for submitting email addresses.
 - Confirmation message upon successful subscription.
--Validation to ensure that only valid email addresses are submitted.
--Error handling for invalid submissions.
+- Validation to ensure that only valid email addresses are submitted.
+- Error handling for invalid submissions.
 ## Technologies Used
--Express.js
--EJS (Embedded JavaScript)
--Node.js
+- Express.js
+- EJS (Embedded JavaScript)
+- Node.js
